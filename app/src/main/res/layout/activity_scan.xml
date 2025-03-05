@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity">
+    <View
+        android:id="@+id/scan_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_view_top"
+        />
+    <TextView
+        android:id="@+id/scan_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/scan_11"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/scan_img_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_below="@+id/scan_top_view"
+        android:minHeight="500dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+
+            />
+        <TextView
+            android:id="@+id/textViewScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scan_btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/scan_img_view">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:text="Camera"
+            android:onClick="captureImage"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_left"
+
+
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="1dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_right"
+            android:onClick="selectImage"
+            android:text="File"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scan_btn_view"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/search_icon"
+        app:backgroundTint="@null"
+        android:background="@drawable/btn_bg_green"
+        android:textSize="18sp"
+        android:text="Scan"
+        android:onClick="scanImage"
+      />
+
+
+
+
+
+
+</RelativeLayout>

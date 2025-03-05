@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ClassMate</string>
+    <string name="Dashboard">Dashboard</string>
+
+    <string name="scan_1">Scan</string>
+    <string name="view_1">View</string>
+    <string name="edit_1">Edit</string>
+    <string name="About_1">About</string>
+
+
+    <string name="scan_11">Scanner</string>
+    <string name="view_11">Viewer</string>
+    <string name="edit_11">Editor</string>
+
+
+
+
+</resources>
